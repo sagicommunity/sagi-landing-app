@@ -222,7 +222,7 @@ export default function AppStoreLanding() {
             <a href="/terms" className="text-gray-500 hover:text-gray-900 transition-colors">
               Условия
             </a>
-            <a href="mailto:support@sagi.kz" className="text-gray-500 hover:text-gray-900 transition-colors">
+            <a href="mailto:business@sagibonus.com" className="text-gray-500 hover:text-gray-900 transition-colors">
               Поддержка
             </a>
           </div>
@@ -395,11 +395,11 @@ export default function AppStoreLanding() {
             © 2025 Sagi Community. Все права защищены.
           </p>
           <div className="flex gap-5 text-sm text-gray-500">
-            <a href="mailto:info@sagi.kz" className="hover:text-gray-900 transition-colors">
-              info@sagi.kz
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">
+              business@sagibonus.com
             </a>
-            <a href="mailto:support@sagi.kz" className="hover:text-gray-900 transition-colors">
-              support@sagi.kz
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">
+              business@sagibonus.com
             </a>
           </div>
         </div>

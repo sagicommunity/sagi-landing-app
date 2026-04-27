@@ -28,7 +28,7 @@ export default function PrivacyPage() {
             <Link to="/" className="text-gray-500 hover:text-gray-900 transition-colors" style={{ textDecoration: 'none' }}>
               Назад
             </Link>
-            <a href="mailto:support@sagi.kz" className="text-gray-500 hover:text-gray-900 transition-colors">
+            <a href="mailto:business@sagibonus.com" className="text-gray-500 hover:text-gray-900 transition-colors">
               Поддержка
             </a>
           </div>
@@ -130,7 +130,7 @@ export default function PrivacyPage() {
         </ul>
         <p className={`${p} mt-3`}>
           Для реализации прав обратитесь:{' '}
-          <a href="mailto:privacy@sagi.kz" style={{ color: GREEN_DARK }}>privacy@sagi.kz</a>
+          <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a>
         </p>
 
         <h3 className={h3}>8. Дети</h3>
@@ -138,7 +138,7 @@ export default function PrivacyPage() {
           Приложение не предназначено для лиц младше 18 лет. Мы не собираем намеренно данные
           несовершеннолетних. Если вы обнаружили, что ребёнок предоставил нам персональные
           данные, свяжитесь с нами по адресу{' '}
-          <a href="mailto:privacy@sagi.kz" style={{ color: GREEN_DARK }}>privacy@sagi.kz</a>.
+          <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a>.
         </p>
 
         <h3 className={h3}>9. Изменения в политике</h3>
@@ -151,9 +151,9 @@ export default function PrivacyPage() {
         <h3 className={h3}>10. Контакты</h3>
         <p className={p}>По вопросам конфиденциальности обращайтесь:</p>
         <ul className={`${ul} not-italic`}>
-          <li>Email: <a href="mailto:privacy@sagi.kz" style={{ color: GREEN_DARK }}>privacy@sagi.kz</a></li>
-          <li>Поддержка: <a href="mailto:support@sagi.kz" style={{ color: GREEN_DARK }}>support@sagi.kz</a></li>
-          <li>Общие вопросы: <a href="mailto:info@sagi.kz" style={{ color: GREEN_DARK }}>info@sagi.kz</a></li>
+          <li>Email: <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a></li>
+          <li>Поддержка: <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a></li>
+          <li>Общие вопросы: <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a></li>
         </ul>
       </main>
 
@@ -171,8 +171,8 @@ export default function PrivacyPage() {
             © 2025 Sagi Community. Все права защищены.
           </p>
           <div className="flex gap-5 text-sm text-gray-500">
-            <a href="mailto:info@sagi.kz" className="hover:text-gray-900 transition-colors">info@sagi.kz</a>
-            <a href="mailto:support@sagi.kz" className="hover:text-gray-900 transition-colors">support@sagi.kz</a>
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
           </div>
         </div>
       </footer>

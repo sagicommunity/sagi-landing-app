@@ -28,7 +28,7 @@ export default function TermsPage() {
             <Link to="/" className="text-gray-500 hover:text-gray-900 transition-colors" style={{ textDecoration: 'none' }}>
               Назад
             </Link>
-            <a href="mailto:support@sagi.kz" className="text-gray-500 hover:text-gray-900 transition-colors">
+            <a href="mailto:business@sagibonus.com" className="text-gray-500 hover:text-gray-900 transition-colors">
               Поддержка
             </a>
           </div>
@@ -143,8 +143,8 @@ export default function TermsPage() {
         <h3 className={h3}>12. Контакты</h3>
         <p className={p}>По вопросам, связанным с Условиями использования, обращайтесь:</p>
         <ul className={`${ul} not-italic`}>
-          <li>Email: <a href="mailto:info@sagi.kz" style={{ color: GREEN_DARK }}>info@sagi.kz</a></li>
-          <li>Поддержка: <a href="mailto:support@sagi.kz" style={{ color: GREEN_DARK }}>support@sagi.kz</a></li>
+          <li>Email: <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a></li>
+          <li>Поддержка: <a href="mailto:business@sagibonus.com" style={{ color: GREEN_DARK }}>business@sagibonus.com</a></li>
         </ul>
       </main>
 
@@ -162,8 +162,8 @@ export default function TermsPage() {
             © 2025 Sagi Community. Все права защищены.
           </p>
           <div className="flex gap-5 text-sm text-gray-500">
-            <a href="mailto:info@sagi.kz" className="hover:text-gray-900 transition-colors">info@sagi.kz</a>
-            <a href="mailto:support@sagi.kz" className="hover:text-gray-900 transition-colors">support@sagi.kz</a>
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
+            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
           </div>
         </div>
       </footer>
