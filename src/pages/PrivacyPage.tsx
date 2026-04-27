@@ -38,7 +38,7 @@ export default function PrivacyPage() {
       {/* CONTENT */}
       <main className="max-w-3xl mx-auto px-6 py-16">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Политика конфиденциальности</h1>
-        <p className="text-sm text-gray-400 mb-10">Последнее обновление: 1 января 2025 г.</p>
+        <p className="text-sm text-gray-400 mb-10">Последнее обновление: 1 января 2026 г.</p>
 
         <h3 className={h3}>1. Общие положения</h3>
         <p className={p}>
@@ -168,7 +168,7 @@ export default function PrivacyPage() {
             sagi
           </Link>
           <p className="text-sm text-gray-400 order-last sm:order-none">
-            © 2025 Sagi Community. Все права защищены.
+            © 2026 Sagi Community. Все права защищены.
           </p>
           <div className="flex gap-5 text-sm text-gray-500">
             <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>

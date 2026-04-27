@@ -392,7 +392,7 @@ export default function AppStoreLanding() {
             sagi
           </span>
           <p className="text-sm text-gray-400 order-last sm:order-none">
-            © 2025 Sagi Community. Все права защищены.
+            © 2026 Sagi Community. Все права защищены.
           </p>
           <div className="flex gap-5 text-sm text-gray-500">
             <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">
