@@ -398,9 +398,6 @@ export default function AppStoreLanding() {
             <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">
               business@sagibonus.com
             </a>
-            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">
-              business@sagibonus.com
-            </a>
           </div>
         </div>
       </footer>
