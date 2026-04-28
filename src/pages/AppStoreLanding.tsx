@@ -19,18 +19,26 @@ function AppIcon() {
   )
 }
 
-function Screenshot({ src, label }: { src: string; label: string }) {
+function PhoneFrame({ src, label }: { src: string; label: string }) {
   return (
-    <div
-      className="overflow-hidden rounded-3xl"
-      style={{
-        width: 220,
-        height: 380,
-        flexShrink: 0,
-        boxShadow: '0 24px 60px rgba(0,0,0,0.14), 0 4px 16px rgba(0,0,0,0.08)',
-      }}
-    >
-      <img src={src} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }} />
+    <div style={{ width: 220, position: 'relative', flexShrink: 0 }}>
+      {/* Корпус */}
+      <div style={{
+        borderRadius: '2.8rem',
+        background: '#1A1A1A',
+        padding: '10px',
+        boxShadow: '0 0 0 1px #3a3a3a, 0 32px 64px rgba(0,0,0,0.28), inset 0 1px 0 rgba(255,255,255,0.08)',
+      }}>
+        {/* Экран */}
+        <div style={{ borderRadius: '2.2rem', overflow: 'hidden', background: '#000', aspectRatio: '9/19.5' }}>
+          <img src={src} alt={label} style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top', display: 'block' }} />
+        </div>
+      </div>
+      {/* Кнопки */}
+      <div style={{ position: 'absolute', left: -3, top: 72,  width: 3, height: 28, borderRadius: '2px 0 0 2px', background: '#2a2a2a' }} />
+      <div style={{ position: 'absolute', left: -3, top: 108, width: 3, height: 28, borderRadius: '2px 0 0 2px', background: '#2a2a2a' }} />
+      <div style={{ position: 'absolute', left: -3, top: 144, width: 3, height: 28, borderRadius: '2px 0 0 2px', background: '#2a2a2a' }} />
+      <div style={{ position: 'absolute', right: -3, top: 96,  width: 3, height: 52, borderRadius: '0 2px 2px 0', background: '#2a2a2a' }} />
     </div>
   )
 }
@@ -287,7 +295,7 @@ export default function AppStoreLanding() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
             {ROLES.map(role => (
               <div key={role.badge} className="flex flex-col items-center gap-6">
-                <Screenshot src={role.screen} label={role.badge} />
+                <PhoneFrame src={role.screen} label={role.badge} />
                 <div className="text-center">
                   <span
                     className={`text-xs font-semibold px-3 py-1 rounded-full ${role.badgeClass}`}
