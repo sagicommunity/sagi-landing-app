@@ -223,7 +223,7 @@ export default function NetworkPage() {
         .atmosphereAltitude(0.18)
         .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
 
-      // Arcs — geodesic connections
+      // Arcs - geodesic connections
       globe
         .arcsData(arcs)
         .arcStartLat('startLat')
@@ -285,7 +285,7 @@ export default function NetworkPage() {
       globe.controls().autoRotateSpeed = 0.35
       globe.controls().enableDamping = true
 
-      // Initial camera position — focus on Kazakhstan
+      // Initial camera position - focus on Kazakhstan
       globe.pointOfView({ lat: 48, lng: 70, altitude: 2.2 }, 0)
 
       globeInstanceRef.current = globe

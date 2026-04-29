@@ -180,7 +180,7 @@ const FEATURES = [
   {
     Icon: QrCode,
     title: 'Цифровой пропуск',
-    desc: 'Личный QR-код для мгновенного подтверждения статуса — без пластика и очередей.',
+    desc: 'Личный QR-код для мгновенного подтверждения статуса - без пластика и очередей.',
     badge: 'Участник',
     badgeClass: 'bg-[#EEF2FF] text-[#4338CA]',
   },
@@ -378,7 +378,7 @@ export default function AppStoreLanding() {
             Начните прямо сейчас
           </h2>
           <p className="text-lg mb-10 max-w-md mx-auto" style={{ color: 'rgba(255,255,255,0.65)' }}>
-            Ваши сообщества, бонусы и привилегии — всё в одном приложении
+            Ваши сообщества, бонусы и привилегии - всё в одном приложении
           </p>
           <div className="flex items-center justify-center gap-4 flex-wrap">
             <AppleStoreBadge />

@@ -47,7 +47,7 @@ export default function SupportPage() {
 
         <h1 className="text-3xl font-bold text-gray-900 mb-3">Поддержка</h1>
         <p className="text-gray-500 mb-10 leading-relaxed">
-          Есть вопросы? Напишите нам в WhatsApp — ответим быстро.
+          Есть вопросы? Напишите нам в WhatsApp - ответим быстро.
         </p>
 
         <a
