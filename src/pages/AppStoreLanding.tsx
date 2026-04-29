@@ -230,7 +230,7 @@ export default function AppStoreLanding() {
             <a href="/terms" className="text-gray-500 hover:text-gray-900 transition-colors">
               Условия
             </a>
-            <a href="mailto:business@sagibonus.com" className="text-gray-500 hover:text-gray-900 transition-colors">
+            <a href="/support" className="text-gray-500 hover:text-gray-900 transition-colors">
               Поддержка
             </a>
           </div>
