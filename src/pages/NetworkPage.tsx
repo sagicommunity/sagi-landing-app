@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { Users } from 'lucide-react'
+import { useT } from '../i18n'
+import LangToggle from '../components/LangToggle'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 interface Profile {
@@ -199,6 +201,7 @@ export default function NetworkPage() {
   const containerRef = useRef<HTMLDivElement>(null)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const globeInstanceRef = useRef<any>(null)
+  const t = useT()
   const [selected, setSelected] = useState<Profile | null>(null)
   const [search, setSearch] = useState('')
   const [ready, setReady] = useState(false)
@@ -330,13 +333,20 @@ export default function NetworkPage() {
       {/* Globe canvas */}
       <div ref={containerRef} style={{ width: '100%', height: '100%' }} />
 
+      {/* Lang toggle */}
+      <div style={{ position: 'fixed', top: 28, right: 100, zIndex: 10 }}>
+        <div style={{ background: 'rgba(255,255,255,0.08)', borderRadius: 8, padding: '4px 10px' }}>
+          <LangToggle />
+        </div>
+      </div>
+
       {/* Header */}
       <div style={{ position: 'fixed', top: 24, left: 28, zIndex: 10 }}>
         <Link to="/" style={{ textDecoration: 'none' }}>
           <span style={{ fontSize: 22, fontWeight: 700, color: '#2ABB6F', letterSpacing: '-0.5px' }}>sagi</span>
         </Link>
         <p style={{ fontSize: 12, color: 'rgba(255,255,255,0.3)', marginTop: 4, fontFamily: 'system-ui, sans-serif' }}>
-          Глобальная сеть участников
+          {t.network.subtitle}
         </p>
       </div>
 
@@ -345,7 +355,7 @@ export default function NetworkPage() {
         <input
           value={search}
           onChange={e => setSearch(e.target.value)}
-          placeholder="Найти участника..."
+          placeholder={t.network.search}
           style={{
             background: 'rgba(255,255,255,0.06)',
             border: '1px solid rgba(255,255,255,0.1)',
@@ -369,7 +379,7 @@ export default function NetworkPage() {
       }}>
         <Users size={13} color="rgba(255,255,255,0.3)" />
         <span style={{ color: 'rgba(255,255,255,0.7)', fontWeight: 600 }}>{visibleCount}</span>
-        {' '}участников
+        {' '}{t.network.members}
       </div>
 
       {/* Hint */}
@@ -380,7 +390,7 @@ export default function NetworkPage() {
           fontFamily: 'system-ui, sans-serif', pointerEvents: 'none',
           whiteSpace: 'nowrap',
         }}>
-          Нажмите на участника чтобы открыть профиль · Тяните для вращения
+          {t.network.hint}
         </div>
       )}
 

@@ -1,9 +1,12 @@
 import { Link } from 'react-router-dom'
+import { useT } from '../i18n'
+import LangToggle from '../components/LangToggle'
 
 const GREEN = '#2ABB6F'
 const GREEN_DARK = '#1E9E5A'
 
 export default function PrivacyPage() {
+  const t = useT()
   const h3 = 'text-base font-semibold text-gray-900 mt-8 mb-2'
   const p = 'text-gray-600 leading-relaxed'
   const ul = 'list-disc list-inside text-gray-600 space-y-1 mt-2 ml-2'
@@ -17,28 +20,23 @@ export default function PrivacyPage() {
         style={{ background: 'rgba(255,255,255,0.85)', backdropFilter: 'blur(12px)' }}
       >
         <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-          <Link
-            to="/"
-            className="text-2xl font-bold select-none"
-            style={{ color: GREEN, letterSpacing: '-0.5px', textDecoration: 'none' }}
-          >
+          <Link to="/" className="text-2xl font-bold select-none" style={{ color: GREEN, letterSpacing: '-0.5px', textDecoration: 'none' }}>
             sagi
           </Link>
           <div className="flex items-center gap-6 text-sm">
             <Link to="/" className="text-gray-500 hover:text-gray-900 transition-colors" style={{ textDecoration: 'none' }}>
-              Назад
+              {t.nav.back}
             </Link>
-            <a href="mailto:business@sagibonus.com" className="text-gray-500 hover:text-gray-900 transition-colors">
-              Поддержка
-            </a>
+            <a href="/support" className="text-gray-500 hover:text-gray-900 transition-colors">{t.nav.support}</a>
+            <LangToggle />
           </div>
         </div>
       </nav>
 
       {/* CONTENT */}
       <main className="max-w-3xl mx-auto px-6 py-16">
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Политика конфиденциальности</h1>
-        <p className="text-sm text-gray-400 mb-10">Последнее обновление: 1 января 2026 г.</p>
+        <h1 className="text-3xl font-bold text-gray-900 mb-2">{t.privacy.title}</h1>
+        <p className="text-sm text-gray-400 mb-10">{t.privacy.updated}</p>
 
         <h3 className={h3}>1. Общие положения</h3>
         <p className={p}>
@@ -167,13 +165,8 @@ export default function PrivacyPage() {
           >
             sagi
           </Link>
-          <p className="text-sm text-gray-400 order-last sm:order-none">
-            © 2026 Sagi Community. Все права защищены.
-          </p>
-          <div className="flex gap-5 text-sm text-gray-500">
-            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
-            <a href="mailto:business@sagibonus.com" className="hover:text-gray-900 transition-colors">business@sagibonus.com</a>
-          </div>
+          <p className="text-sm text-gray-400 order-last sm:order-none">{t.footer.copy}</p>
+          <a href="mailto:business@sagibonus.com" className="text-sm text-gray-500 hover:text-gray-900 transition-colors">business@sagibonus.com</a>
         </div>
       </footer>
     </div>
