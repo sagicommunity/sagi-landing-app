@@ -11,9 +11,9 @@ export default function LangToggle() {
         color: '#9ca3af', padding: 0,
       }}
     >
-      <span style={{ color: lang === 'ru' ? '#111827' : '#9ca3af', fontWeight: lang === 'ru' ? 600 : 400 }}>RU</span>
+      <span style={{ color: lang === 'en' ? '#111827' : '#9ca3af', fontWeight: lang === 'en' ? 600 : 400 }}>en</span>
       <span style={{ color: '#d1d5db' }}>·</span>
-      <span style={{ color: lang === 'en' ? '#111827' : '#9ca3af', fontWeight: lang === 'en' ? 600 : 400 }}>EN</span>
+      <span style={{ color: lang === 'ru' ? '#111827' : '#9ca3af', fontWeight: lang === 'ru' ? 600 : 400 }}>ru</span>
     </button>
   )
 }
