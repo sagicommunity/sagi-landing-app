@@ -115,6 +115,7 @@ export default function AppStoreLanding() {
             <a href="/privacy" className="text-gray-500 hover:text-gray-900 transition-colors">{t.nav.privacy}</a>
             <a href="/terms"   className="text-gray-500 hover:text-gray-900 transition-colors">{t.nav.terms}</a>
             <a href="/support" className="text-gray-500 hover:text-gray-900 transition-colors">{t.nav.support}</a>
+            <a href="/safety"  className="text-gray-500 hover:text-gray-900 transition-colors">{t.nav.safety}</a>
             <LangToggle />
           </div>
         </div>

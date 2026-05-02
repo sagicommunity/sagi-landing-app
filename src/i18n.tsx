@@ -22,7 +22,7 @@ export function useLang() { return useContext(Ctx) }
 
 export const TRANS = {
   ru: {
-    nav: { privacy: 'Конфиденциальность', terms: 'Условия', support: 'Поддержка', back: 'Назад' },
+    nav: { privacy: 'Конфиденциальность', terms: 'Условия', support: 'Поддержка', safety: 'Безопасность', back: 'Назад' },
     footer: { copy: '© 2026 Sagi Community. Все права защищены.' },
     landing: {
       badge: 'Экосистема лояльности для сообществ',
@@ -172,7 +172,7 @@ export const TRANS = {
   },
 
   en: {
-    nav: { privacy: 'Privacy', terms: 'Terms', support: 'Support', back: 'Back' },
+    nav: { privacy: 'Privacy', terms: 'Terms', support: 'Support', safety: 'Safety', back: 'Back' },
     footer: { copy: '© 2026 Sagi Community. All rights reserved.' },
     landing: {
       badge: 'Loyalty ecosystem for communities',
