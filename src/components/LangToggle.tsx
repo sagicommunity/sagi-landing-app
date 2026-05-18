@@ -1,6 +1,6 @@
 import { useLang, type Lang } from '../i18n'
 
-const LANGS: Lang[] = ['en', 'ru', 'kk']
+const LANGS: Lang[] = ['en', 'ru', 'kz']
 
 export default function LangToggle() {
   const { lang, setLang } = useLang()

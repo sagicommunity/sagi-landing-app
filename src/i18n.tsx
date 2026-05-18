@@ -1,11 +1,11 @@
 import { createContext, useContext, useState, ReactNode } from 'react'
 
-export type Lang = 'ru' | 'en' | 'kk'
+export type Lang = 'ru' | 'en' | 'kz'
 
 function storedLang(): Lang {
   try {
     const v = localStorage.getItem('sagi_lang')
-    if (v === 'en' || v === 'kk') return v
+    if (v === 'en' || v === 'kz') return v
     return 'ru'
   } catch { return 'ru' }
 }
@@ -19,7 +19,7 @@ export function LangProvider({ children }: { children: ReactNode }) {
     try { localStorage.setItem('sagi_lang', next) } catch {}
   }
   const toggle = () => {
-    const order: Lang[] = ['en', 'ru', 'kk']
+    const order: Lang[] = ['en', 'ru', 'kz']
     const next = order[(order.indexOf(lang) + 1) % order.length]
     setLang(next)
   }
@@ -328,7 +328,7 @@ export const TRANS = {
       cooperation: 'We cooperate with law enforcement authorities when necessary.',
     },
   },
-  kk: {
+  kz: {
     nav: { privacy: 'Құпиялылық', terms: 'Шарттар', support: 'Қолдау', safety: 'Қауіпсіздік', back: 'Артқа' },
     footer: { copy: '© 2026 Sagi Community. Барлық құқықтар қорғалған.' },
     landing: {
